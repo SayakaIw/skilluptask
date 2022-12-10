@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,6 +13,34 @@ header {
 .header-group {
   display: flex;
   justify-content: space-between;
+  font-size: 0;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.hamburger {
+  width: 40px;
+  height: 40px;
+  margin-right: 5%;
+  border: 1px solid #FAFAFA;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+}
+
+.hamburger-bar {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: #FAFAFA;
+}
+
+.hamburger-bar:first-child {
+  margin-top: 10px;
 }
 
 .logo {
@@ -23,6 +51,7 @@ header {
   height: 70px;
   color: #FAFAFA;
   font-size: 16px;
+  display: block;
 }
 
 .nav-list {
@@ -46,10 +75,6 @@ header {
   background-image: url(img/mv.png);
   background-size: cover;
   background-position: center;
-}
-
-.container {
-  margin: 0 auto;
 }
 
 .mv-title {
@@ -209,6 +234,11 @@ header {
   font-size: 16px;
 }
 
+.link-text {
+  text-decoration: underline;
+  color: #212121;
+}
+
 #contact {
   width: 100%;
   background-color: #FAFAFA;
@@ -227,13 +257,18 @@ header {
 }
 
 .right-contact-content {
-  widht: 170px;
+  width: 170px;
   margin: 0 auto;
 }
 
 .right-contact-content i {
   font-size: 50px;
   margin-right: 20px;
+  float: left;
+}
+
+.right-contact-content i:last-child {
+  margin-right: 0;
 }
 
 footer {
@@ -244,4 +279,10 @@ footer {
   text-align: center;
   color: #FAFAFA;
   line-height: 60px;
+}
+
+@media screen and (max-width:460px) {
+  #mv {background-image: url(img/code.png);}
+  .container {width: 90%;}
+  .sp-none {display: none}
 }
