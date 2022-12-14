@@ -149,26 +149,26 @@ header {
   background-color: #FAFAFA;
 }
 
-.strengh-group {
+.strength-group {
   width: 980px;
   display: flex;
   padding: 30px 0 90px 0;
   margin: 0 auto;
 }
 
-.strengh {
+.strength {
   width: 320px;
   margin-right: 10px;
   text-align: center;
   font-size: 60px;
 }
 
-.strengh-title {
+.strength-title {
   padding: 10px 0;
   font-size: 20px;
 }
 
-.strengh-text {
+.strength-text {
   font-size: 16px;
   text-align: left;
 }
@@ -304,4 +304,21 @@ footer {
     width: 320px;
   }
   .strength {margin-right: 0}
+  .profile-group {
+    flex-flow: row wrap;
+    text-align: center;
+  }
+  .profile-group .left-content {
+    margin-bottom: 20px;
+  }
+  .left-content {width: 100%}
+  .right-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .contact-group {
+    flex-flow: row wrap;
+    width: 100%;
+    text-align: center;
+  }
 }
